@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    
+}
+
+
+body{
+    display: grid;
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+
+    
+
+}
+section{
+    position:relative;
+    width:100%;
+    min-height: 10vh;
+    padding: 100px;
+    display: flex;
+    justify-self: space-between;
+    align-items: center;
+    background: #fff;
+    background: rgba(0,0,0,0.5);
+
+
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}   
+header .logo
+{
+    position: relative;
+    max-width: 80px;
+    overflow:scroll;
+}
+header ul{
+    position: relative;
+    display:flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a
+{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px
+} 
+
+
+.content .textBox h2{
+color: #fff;
+font-size: 4em;
+line-height: 1.4em;
+font-weight: 500;
+cursor: pointer;
+}
+
+.content .textBox p{
+ 
+    cursor: pointer;
+    }
+.content .textBox h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    
+    font-weight: 900;
+    
+    }
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+    
+ }
+
+ .content .textBox #more:hover{
+    background: #B22222;
+ }
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;  
+    margin-top: 50px; 
+}  
+.content .imgBox img{
+ max-width: 340px;
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transform: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.thumb li img{
+    max-width: 60px;
+}
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    transform: sclae(0.6);
+    filter: invert(1);
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+.body2 .tongHopNhanXetKhachHang{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 75px
+
+}
+
+div.stars {
+    width: 270px;
+    display: inline-block;
+    margin-top: -60px;
+    margin-left: 230px
+  }
+   
+  input.star { display: none; }
+   
+  label.star {
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #444;
+    transition: all .2s;
+  }
+   
+  input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
+    /* text-shadow: 0 0 20px #952; */
+
+  }
+   
+  input.star-5:checked ~ label.star:before {
+    color: #FE7;
+  }
+   
+  input.star-1:checked ~ label.star:before { color: #F62; }
+   
+  label.star:hover { transform: rotate(-15deg) scale(1.3); }
+   
+  label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+  }
+
+.body2 #nhanXetKhachHang {
+    display: inline-block;
+    padding : 2px 2px 2px 2px;
+    justify-content: center;
+    font-style: italic;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+    
+}
+.body2 #tieuDeNhanXetKhachHang{
+    color: rgb(62, 62, 62);
+    justify-content: center;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 27px;
+    word-spacing: 1px;
+    cursor: pointer;
+}
+
+.body2 .footerPhu {
+    position: relative;
+    justify-self: space-between;
+    display: flex;
+    background-color: rgba(240, 239, 239, 0.847);
+    margin-top:1100px;
+    height: 410px
+
+}
+.body2 .footerPhu h3{
+    margin: 40px 245px;
+    color:rgb(62, 62, 62);
+    font-size: 15px;
+    font-weight:bold;
+        
+}
+
+.latteLaCuaBan #anhLatte {
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 210px;
+    width: 32%;
+
+}
+
+.coHoi #congSu{
+    position: absolute;
+    color: rgb(62, 62, 62);
+    margin-top:650px;
+    margin-left: 905px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration:wavy;
+}
+
+.coHoi #congSuComment{
+    position: absolute;
+    color: black;
+    margin-top:697px;
+    margin-left: 905px;
+    font-style: italic;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+}
+
+.coHoi #thamGiaNgay{
+    position: absolute;
+    color: black;
+    margin-top:755px;
+    margin-left: 905px;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+    text-decoration: none;
+    border-bottom: dotted;
+}
+
+
+
+
+@media (max-width: 991px){
+    body{
+        display: grid;
+        position:relative ;
+        max-width: 100%;
+        height: 100%;
+    }
+    header{
+        padding: 20px;
+    }
+    header .logo {
+        max-width: 60px;
+    }
+
+    header ul {
+        display: none;
+    }
+    
+    .toggle{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(menu.png);
+        background-size: 35px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+
+    }
+    .toggle.active{
+        background: url(./close.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    section{
+        padding: 20px 20px 120px;
+    }
+    header ul.navigation.active{
+        position: fixed;
+        right: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        z-index: 10;
+        }
+        header ul li a {
+            display: inline-block;
+            color: #333;
+            font-size: 1.5em;
+            margin: 5px 0;
+            font-weight: 400;
+            margin-left: 40px;
+            text-decoration: none;
+        }
+    .content{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .content .textBox h2{
+        font-size: 2.5em;
+        margin-bottom:15px;
+    }
+    .content .textBox{
+        max-width: 100%;
+    }
+    .textBox p{
+        font-size: 11pt;
+    }
+    .content .imgBox{
+        max-width: 100%;
+        justify-content: center;
+    }
+    .content .imgBox img {
+        max-width: 300px;
+    }
+    .thumb li img {
+        max-width: 45px;
+    }
+    .circle {
+        clip-path: circle(430px at center bottom);
+    }
+    .sci{
+        background-color: #017143;
+        right: 0;
+    }
+
+}
+
+.footer li{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.container2 {
+    max-width: 1900px;
+    position: relative;
+}
+
+
+
+@media (min-width: 1910px){
+    #carouselExampleIndicators{
+        transform: rotate(2deg);
+        border-bottom: 20pt;
+        max-width: 10%;
+        margin-bottom: -500px;
+        left: 62.5%;
+        position: relative;
+        margin-top: 40px;
+    }
+    }
+
+
+.displaynone{
+    display: none;
+}

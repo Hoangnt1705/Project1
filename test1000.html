@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .container {
+        background-image: linear-gradient(to right, yellow,green);
+        width: 280px;
+        margin: 40px auto;
+        height: 500px;
+        box-sizing: border-box;
+        padding: 50px 0 0 70px;
+        border-radius: 5px;
+        color: black;
+        position: relative;
+    }
+
+    .container input {
+        margin: 5px 0px;
+        width: 128px;
+        height: 12px;
+        outline: none;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .container button {
+        position: relative;
+        left: 4px;
+        display: block;
+        height: 35px;
+        background-color: antiquewhite;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 1px 1px 3px 3px tomato;
+    }
+
+    .container button:hover {
+        cursor: pointer;
+        background-image: linear-gradient(to right, red, yellow);
+        outline: none;
+    }
+
+    .body {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .body i {
+        position: absolute;
+        left: 195px;
+        margin-top: 8px;
+        cursor: pointer;
+    }
+
+    .okAcount {
+        position: relative;
+        left: 0px;
+    }
+
+    a {
+        text-decoration: none;
+
+    }
+</style>
+
+<body>
+    //     let email = document.getElementById("email").value;
+    //     console.log(email);
+    //     let showError = document.getElementById("showError");
+    //     let success=document.getElementById("success");
+    //     if (validateEmail(email) == true) {
+    //         showError.setAttribute("style", "display:none")
+    //         success.setAttribute("style","display:block;color:green")
+    //     }
+    //     else{
+    //         showError.setAttribute("style", "display:block;color:red")
+    //         success.setAttribute("style", "display:none")
+    //     }
+    //     //document.getElementById("email").value = "";
+    // }
+    // let result= document.getElementsByClassName("hello");
+    // // result[0].setAttribute("style","color:red;");
+    // result[0].style.fontSize = "20px";
+    // result[0].style.backgroundColor = "blue";
+    // result[0].style.width = "100px";
+    // result[0].style.height = "50px";
+    // result[0].style.textAlign = "center";
+    // result[0].style.lineHeight = "50px";
+    //result[0].contains("style")
+    // let obj = {
+    //     name: "hoang",
+    // }
+    // obj.address = "hà nội!";
+    // console.log(obj);
+//     setInterval(() => {
+//         result[0].classList.toggle("color")
+//     }, 1000);
+//    let a=Math.floor(Math.random() * 255);
+//   let b = Math.floor(Math.random() * 255);
+//   let c = Math.floor(Math.random() * 255);
+//     console.log(a);
+    /*
+     rgb(a,b,c)
+     */ -->
+<!-- </script> -->
+<!-- <script>
+let result=document.querySelector("#heading");
+// result.innerText=" <i> heading1</i> "
+console.log(result.innerText);
+    <!--  DOM  document object modal 
+    mô hình đối tượng văn bản 
+    có 3 thành phần :
+    1: element 
+    2: attribute 
+    3: text 
+ Nắm được cách tương tác của Dom 
+  các cách tương tác :
+     đặt cho các element 1 id hoặc class 
+    thêm thuộc tính
+    Xoá thuộc tính
+    kiểm tra xem attribute có tồn tại trong element không?
+    // toggle kiểm tra xem trong thẻ có attribute đó không?
+            nếu có thì xoá đi
+            nếu không có thì thêm vào 
+3.TEXT gồm có 
+        innerText 
+        textContent 
+        innerHTML 
+ -->
+    <!-- <input id="email" type="text" placeholder="nhập email" value="">
+    <button onclick="checkEmail()"> login </button> <br>
+    <span id="showError" style="display: none;"> sai định dạng email!</span>
+    <span id="success" style="display: none;"> đăng nhập thành công!</span>
+    <script> -->
+    <!-- // function validateEmail(email1) {
+        //     var re = /\S+@\S+\.\S+/;
+        //     return re.test(email1);
+        // }
+        //     //console.log(validateEmail("hieugmail.com"));
+        // function checkEmail() {
+
+
+             <div class="container">
+        <div class="body">
+            <label for="username">Tên đăng nhập</label><br>
+            <input id='username' type="text" placeholder="Username">
+            <span class="errorUserName" id="errorUserName" style="display: none">Username sai dinh dang</span><br>
+
+            <label for="email"> Email </label> <br>
+            <input id="email" type="text" placeholder="Email"> <br>
+            <span id="emailExits" style="display:none">Trùng email</span>
+            <span class="errorMail" id="errorMail" style="display: none">Mail sai dinh dang</span>
+
+            <label for="password"> Mật khẩu </label> <br>
+            <i id="icon" onclick="showPassword()" class="fa-solid fa-eye"></i>
+            <input id="password" type="password" placeholder="Password"> <br>
+            <span class="error" id="error" style="display: none">Sai mật khẩu</span>
+
+            <label for="confirmPassword"> Nhập lại mật khẩu </label> <br>
+            <i id="iconClose" onclick="showConfirmPassword()" class="fa-solid fa-eye"></i>
+            <input id="confirmPassword" type="password" placeholder="Confirm Password"> <br>

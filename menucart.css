@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+body{
+    background-size: cover;
+    background-position-y: -300%;
+    background-position:  -40px ;
+    
+}
+.container{
+    font-size: 18px;
+}
+#header{
+    background-color: #006341;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+}
+
+#header .container .infoHeaderTopL{
+    color: rgba(204, 204, 204, 0.673);
+    text-decoration: none;
+    margin-right: 150px;
+    margin-top:-20px;
+    position: relative;
+    font-weight: 200;
+
+}
+
+#header .infoHeaderTopL .infoL{
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 2px 2px 3px;
+    font-size:14px;
+    font-weight: 300;
+}
+
+#header .container .infoHeaderTopR{
+    color: rgba(204, 204, 204, 0.673);
+    text-decoration: none;
+    text-align: right;
+    margin-right: 20px;
+    margin-top:-25px;
+    position: relative;
+    font-weight: 200;
+
+}
+
+#header .infoHeaderTopR .infoR{
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 2px 2px 11px;
+    font-size:15px;
+    font-weight: 300;
+}
+
+nav{
+    display: center;
+    justify-items: center;
+    padding-top:30px;
+
+}
+#logo{
+    padding: 0px 0px;
+}
+#logo img{
+    max-width: 70px;
+    height: auto;
+    margin-left: -100px;
+    margin-bottom: -132px
+}
+#main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 4px;
+    width: 2000px;
+}
+#main-menu li{
+    position: relative;
+
+}
+
+#main-menu li .search {
+    margin-top:-15px;
+    background:#ddd;
+    border-radius:4px;
+    padding: 4px 4px 6px 10px;
+
+}
+#main-menu li .inputSearch {
+    border:none;
+    outline: none;
+    width: 700px;
+    height: 38px;
+    background:#ddd;
+    font-size: 16px;
+
+
+}
+#main-menu li .font {
+    font-family: FontAwesome;
+    cursor: pointer;
+    background: #006341;
+    color: #fff;
+    border-radius: 3px;
+    width: 35px;
+    height: 35px;
+    border: none;
+   
+}
+#main-menu li .font:hover {
+    background-color: #01714a;
+}
+
+#main-menu li .thongTinDuoiThanhSearch{
+    color: rgba(204, 204, 204, 0.952);
+    font-size: 13px;
+    padding-top: 10px;
+
+}
+
+#main-menu .cart-icon{
+    color: #fff;
+    font-size: 27px;
+    padding-left: 50px;
+
+}
+
+#main-menu li a{
+    color: aliceblue;
+    display: block;
+    padding: 13px 25px;
+    text-decoration: none;
+
+}
+
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color: #006341;
+    padding: 10px 0px ;
+    list-style: none;
+    width: 200px;
+    border: 1px solid #fff;
+    display: none;
+    margin-top: 13.5px;
+    font-size: 16px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: none;
+
+
+}
+#main-menu li:hover>ul.sub-menu{
+    display: block;
+}
+
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid #ddd;
+    left: 0;
+}
+
+
+
+#main-menu ul.sub-menu li:hover > a{
+    border-bottom: 1px solid #6e6e6e;
+}
+
+#main-menu ul.sub-menu li:last-child a {
+    border: none;
+}
+
+#main-menu ul.sub-menu ul.sub-menu{
+    left: 144.5px;
+    top: -6.8px;
+}
+#main-menu ul.sub-menu ul.sub-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid #434343;
+    left: 0;
+}
+#main-menu ul.sub-menu ul.sub-menu ul.sub-menu li:last-child a{
+    border: none;
+}
+
+/* thiết lập border khi hover */
+#main-menu>li>a::before{
+ position: relative;
+}
+
+#main-menu>li>a::before{
+    content: "";
+    height: 5px;
+    width: 0;
+    background: #ddd;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-menu>li:hover>a::before{
+   width: 100%;
+
+}
+
+#main-menu>li.has-child::after{
+ font: var(--fa-font-solid);
+content: "\f107";   
+color: #b9b9b9;
+position: absolute;
+top: 0px;
+right: 0px;
+padding: 18px 0px;
+}
+
+#main-menu .sub-menu li:hover>a{
+    color: #ddd;
+}
+
+#main-menu .sub-menu>li.has-child::after{
+font: var(--fa-font-solid);
+content: "\f105";   
+color: #b9b9b9;
+position: absolute;
+top: 0px;
+right: 0px;
+padding: 10px 6px;
+}
+
+#main-menu .sub-menu>li.has-child:hover::after{
+    color: red;
+}
+
